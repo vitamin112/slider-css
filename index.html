@@ -2,44 +2,388 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./instagram.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <title>Slider | Reponsive</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/images/education_60px.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./static/css/main/style.css" />
+    <title>Web</title>
 </head>
 
 <body>
+    <section id="header">
+        <header class="header">
+            <div class="logo">
+                <a href="#">
+                    <img src="./assets/images/logo-haui-size.png" alt="" /></a>
+                <p>HAUI</p>
+            </div>
+            <div class="search-btn">
+                <img src="./assets/icon/search-solid.svg" alt="" />
+            </div>
+            <div class="search-box">
 
+                <input type="search" placeholder="Search..." />
+                <button class="btn btn-search">Tìm <img src="./assets/icon/search-solid.svg" alt="" /></button>
+            </div>
+            <div class="users">
+
+            </div>
+        </header>
+    </section>
+
+    <section id="nav">
+        <div class="nav">
+
+            <ul>
+                <div class="close-btn">
+                    <img src="./assets/icon/Close_52px.png" alt="">
+                </div>
+                <li>
+                    <a href="#">
+                        <img src="./assets/icon/home-solid.svg" alt="" />
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#posts">
+                        <img src="./assets/icon/newspaper-solid.svg" alt="" />
+                        Bài viết
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./assets/icon/file-alt-regular.svg" alt="" />
+                        Tài liệu
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
     <section id="banner">
 
-        <div class="slider-box">
-            <div class="sliders">
-                <input type="radio" name="slider" checked id="img1">
-                <input type="radio" name="slider" id="img2">
-                <input type="radio" name="slider" id="img3">
-                <div class="img-box">
-                    <img class="img1"
-                        src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                        alt="">
-                    <img class="img2"
-                        src="https://images.unsplash.com/photo-1633113089631-6456cccaadad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                        alt="">
-                    <img class="img3"
-                        src="https://images.unsplash.com/photo-1496096113680-63bcf8182576?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80"
-                        alt="">
-                </div>
-                <div class="slider-control">
-                    <label class="img1" for="img1"></label>
-                    <label class="img2" for="img2"></label>
-                    <label class="img3" for="img3"></label>
+        <div class="banner-content container">
+            <div class="item first">
+                <img src="./assets/images/photo-1488190211105-8b0e65b80b4e.jfif" alt="" />
+                <div class="banner-title">
+                    <h2>Kho tài liệu </h2>
+                    <p>Rộng lớn và đầy đủ</p><a href="#" class="btn btn-primary">Xem thêm</a>
                 </div>
             </div>
 
+            <div class="item">
+                <img src="./assets/images/photo-1521587760476-6c12a4b040da.jfif" alt="" />
+                <div class="banner-title">
+                    <h2>Kho tài liệu </h2>
+                    <p>Rộng lớn và đầy đủ</p><a href="#" class="btn btn-primary">Xem thêm</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./assets/images/photo-1507842217343-583bb7270b66.jfif" alt="" />
+                <div class="banner-title">
+                    <h2>Kho tài liệu </h2>
+                    <p>Rộng lớn và đầy đủ</p><a href="#" class="btn btn-primary">Xem thêm</a>
+                </div>
+            </div>
 
         </div>
+        <div class="control-btn">
+            <img class="prev-btn" src="./assets/icon/angle-left-solid.svg" alt="">
+            <img class="next-btn" src="./assets/icon/angle-right-solid.svg" alt="">
+        </div>
+        <div class="controler">
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+        </div>
+
+
     </section>
+    <section id="main">
+        <div class="content container">
+            <h2 class="title" id="posts">Nội dung nổi bật <span><a href="#">More <img
+                            src="./assets/icon/angle-right-solid.svg" alt=""></a></span></h2>
+            <div class="posts">
+                <div class="post">
+                    <div class="post-content">
+                        <h3>Nội dung 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel itaque laborum incidunt eaque
+                            debitis dolorem minima sapiente nulla, natus odit delectus ipsam magnam voluptatem iste.
+                            Iurelaborum incidunt eaque
+                            debitis dolorem minima sapiente nulla, natus odit delectus ipsam magnam voluptatem iste.
+                            Iur
+                            repudiandae debitis magni nemo.</p>
+                    </div>
+                    <div class="post-bottom">
+                        <a href="#" class="author">
+                            <div class="author-img">
+                                <img src="./assets/images/photo-1488190211105-8b0e65b80b4e.jfif" alt="">
+                            </div>
+                            <div class="author-name">
+                                <p>Nguyễn Văn Lộc</p>
+                            </div>
+                        </a>
+                        <div class="view">
+                            <img src="./assets/icon/eye_48px.png" alt="">
+                            <span>(32)</span>
+                            <img src="./assets/icon/quote_64px.png" alt="">
+                            <span>(2)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-content">
+                        <h3>Nội dung 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel itaque laborum incidunt eaque
+                            debitis dolorem minima sapiente nulla, natus odit delectus ipsam magnam voluptatem iste.
+                            Iurelaborum incidunt eaque
+                            debitis dolorem minima sapiente nulla, natus odit delectus ipsam magnam voluptatem iste.
+                            Iur
+                            repudiandae debitis magni nemo.</p>
+                    </div>
+                    <div class="post-bottom">
+                        <a href="#" class="author">
+                            <div class="author-img">
+                                <img src="./assets/images/photo-1488190211105-8b0e65b80b4e.jfif" alt="">
+                            </div>
+                            <div class="author-name">
+                                <p>Nguyễn Văn Lộc</p>
+                            </div>
+                        </a>
+                        <div class="view">
+                            <img src="./assets/icon/eye_48px.png" alt="">
+                            <span>(32)</span>
+                            <img src="./assets/icon/quote_64px.png" alt="">
+                            <span>(2)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-content">
+                        <h3>Nội dung 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel itaque laborum incidunt eaque
+                            debitis dolorem minima sapiente nulla, natus odit delectus ipsam magnam voluptatem iste.
+                            Iurelaborum incidunt eaque
+                            debitis dolorem minima sapiente nulla, natus odit delectus ipsam magnam voluptatem iste.
+                            Iur
+                            repudiandae debitis magni nemo.</p>
+                    </div>
+                    <div class="post-bottom">
+                        <a href="#" class="author">
+                            <div class="author-img">
+                                <img src="./assets/images/photo-1488190211105-8b0e65b80b4e.jfif" alt="">
+                            </div>
+                            <div class="author-name">
+                                <p>Nguyễn Văn Lộc</p>
+                            </div>
+                        </a>
+                        <div class="view">
+                            <img src="./assets/icon/eye_48px.png" alt="">
+                            <span>(32)</span>
+                            <img src="./assets/icon/quote_64px.png" alt="">
+                            <span>(2)</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <h2 class="title">Bài viết mới<span><a href="#">More <img src="./assets/icon/angle-right-solid.svg"
+                            alt=""></a></span></h2>
+            <div class="posts">
+                <div class="post">
+                    <div class="post-content">
+                        <h3>Nội dung 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel itaque laborum incidunt eaque
+                            debitis dolorem minima sapiente nulla, natus odit delectus ipsam magnam voluptatem iste.
+                            Iurelaborum incidunt eaque
+                            debitis dolorem minima sapiente nulla, natus odit delectus ipsam magnam voluptatem iste.
+                            Iur
+                            repudiandae debitis magni nemo.</p>
+                    </div>
+                    <div class="post-bottom">
+                        <a href="#" class="author">
+                            <div class="author-img">
+                                <img src="./assets/images/photo-1488190211105-8b0e65b80b4e.jfif" alt="">
+                            </div>
+                            <div class="author-name">
+                                <p>Nguyễn Văn Lộc</p>
+                            </div>
+                        </a>
+                        <div class="view">
+                            <img src="./assets/icon/eye_48px.png" alt="">
+                            <span>(32)</span>
+                            <img src="./assets/icon/quote_64px.png" alt="">
+                            <span>(2)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-content">
+                        <h3>Nội dung 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel itaque laborum incidunt eaque
+                            debitis dolorem minima sapiente nulla, natus odit delectus ipsam magnam voluptatem iste.
+                            Iurelaborum incidunt eaque
+                            debitis dolorem minima sapiente nulla, natus odit delectus ipsam magnam voluptatem iste.
+                            Iur
+                            repudiandae debitis magni nemo.</p>
+                    </div>
+                    <div class="post-bottom">
+                        <a href="#" class="author">
+                            <div class="author-img">
+                                <img src="./assets/images/photo-1488190211105-8b0e65b80b4e.jfif" alt="">
+                            </div>
+                            <div class="author-name">
+                                <p>Nguyễn Văn Lộc</p>
+                            </div>
+                        </a>
+                        <div class="view">
+                            <img src="./assets/icon/eye_48px.png" alt="">
+                            <span>(32)</span>
+                            <img src="./assets/icon/quote_64px.png" alt="">
+                            <span>(2)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-content">
+                        <h3>Nội dung 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel itaque laborum incidunt eaque
+                            debitis dolorem minima sapiente nulla, natus odit delectus ipsam magnam voluptatem iste.
+                            Iurelaborum incidunt eaque
+                            debitis dolorem minima sapiente nulla, natus odit delectus ipsam magnam voluptatem iste.
+                            Iur
+                            repudiandae debitis magni nemo.</p>
+                    </div>
+                    <div class="post-bottom">
+                        <a href="#" class="author">
+                            <div class="author-img">
+                                <img src="./assets/images/photo-1488190211105-8b0e65b80b4e.jfif" alt="">
+                            </div>
+                            <div class="author-name">
+                                <p>Nguyễn Văn Lộc</p>
+                            </div>
+                        </a>
+                        <div class="view">
+                            <img src="./assets/icon/eye_48px.png" alt="">
+                            <span>(32)</span>
+                            <img src="./assets/icon/quote_64px.png" alt="">
+                            <span>(2)</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <h2 class="title">Tài liệu được chia sẻ<span><a href="#">More <img src="./assets/icon/angle-right-solid.svg"
+                            alt=""></a></span></h2>
+            <div class="posts">
+                <div class="post">
+                    <div class="post-content">
+                        <h3>Nội dung 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel itaque laborum incidunt eaque
+                            debitis dolorem minima sapiente nulla, natus odit delectus ipsam magnam voluptatem iste.
+                            Iurelaborum incidunt eaque
+                            debitis dolorem minima sapiente nulla, natus odit delectus ipsam magnam voluptatem iste.
+                            Iur
+                            repudiandae debitis magni nemo.</p>
+                    </div>
+                    <div class="post-bottom">
+                        <a href="#" class="author">
+                            <div class="author-img">
+                                <img src="./assets/images/photo-1488190211105-8b0e65b80b4e.jfif" alt="">
+                            </div>
+                            <div class="author-name">
+                                <p>Nguyễn Văn Lộc</p>
+                            </div>
+                        </a>
+                        <div class="view">
+                            <img src="./assets/icon/eye_48px.png" alt="">
+                            <span>(32)</span>
+                            <img src="./assets/icon/quote_64px.png" alt="">
+                            <span>(2)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-content">
+                        <h3>Nội dung 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel itaque laborum incidunt eaque
+                            debitis dolorem minima sapiente nulla, natus odit delectus ipsam magnam voluptatem iste.
+                            Iurelaborum incidunt eaque
+                            debitis dolorem minima sapiente nulla, natus odit delectus ipsam magnam voluptatem iste.
+                            Iur
+                            repudiandae debitis magni nemo.</p>
+                    </div>
+                    <div class="post-bottom">
+                        <a href="#" class="author">
+                            <div class="author-img">
+                                <img src="./assets/images/photo-1488190211105-8b0e65b80b4e.jfif" alt="">
+                            </div>
+                            <div class="author-name">
+                                <p>Nguyễn Văn Lộc</p>
+                            </div>
+                        </a>
+                        <div class="view">
+                            <img src="./assets/icon/eye_48px.png" alt="">
+                            <span>(32)</span>
+                            <img src="./assets/icon/quote_64px.png" alt="">
+                            <span>(2)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-content">
+                        <h3>Nội dung 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel itaque laborum incidunt eaque
+                            debitis dolorem minima sapiente nulla, natus odit delectus ipsam magnam voluptatem iste.
+                            Iurelaborum incidunt eaque
+                            debitis dolorem minima sapiente nulla, natus odit delectus ipsam magnam voluptatem iste.
+                            Iur
+                            repudiandae debitis magni nemo.</p>
+                    </div>
+                    <div class="post-bottom">
+                        <a href="#" class="author">
+                            <div class="author-img">
+                                <img src="./assets/images/photo-1488190211105-8b0e65b80b4e.jfif" alt="">
+                            </div>
+                            <div class="author-name">
+                                <p>Nguyễn Văn Lộc</p>
+                            </div>
+                        </a>
+                        <div class="view">
+                            <img src="./assets/icon/eye_48px.png" alt="">
+                            <span>(32)</span>
+                            <img src="./assets/icon/quote_64px.png" alt="">
+                            <span>(2)</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id='footer'>
+        <footer class='container'>
+            <a href="#"><img src="./assets/images/logo-dh-congnghiep-hn.jpg" alt=""> Thuộc đại học công nghiệp Hà
+                Nội</a>
+            <ol>
+                <li>
+                    <p><span>Địa chỉ:</span> Số 298 Đ. Cầu Diễn, Minh Khai, Bắc Từ Liêm, Hà Nội</p>
+                </li>
+                <li>
+                    <p><span>Điện thoại:</span> 024 3765 5121</p>
+                </li>
+                <li>
+                    <p><span>Hiệu trưởng:</span> PGS.TS. Trần Đức Quý</p>
+                </li>
+            </ol>
+
+        </footer>
+        <div class="container social">
+            <p>Phát triển bởi <a href="#">@abcxyz</a></p>
+        </div>
+    </section>
+
+    <script src="./static/js/main/app.js"></script>
 </body>
 
 </html>
