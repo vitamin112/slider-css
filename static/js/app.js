@@ -43,15 +43,8 @@ setInterval(() => {
 
 var closeBtn = document.querySelector(".close-btn");
 var menuChild = document.querySelectorAll(".nav ul li");
-var menuBtn = document.querySelector(".users");
+var menuBtn = document.querySelector(".users img ");
 
-if (window.screen.width <= 767) {
-    menuBtn.innerHTML = " <img src=\".\/assets\/icon\/menu_rounded_64px.png\">"
-}
-
-else {
-    menuBtn.innerHTML = "<a href\"#\" class=\"btn btn-login\">Đăng nhập</a>"
-}
 
 menuBtn.onclick = () => {
     document.getElementById("nav").classList.toggle("active");
