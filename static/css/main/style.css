@@ -652,6 +652,10 @@ footer ol li span {
   font-weight: 500;
 }
 
+.users img {
+  display: none;
+}
+
 @media screen and (max-width: 767px) {
   .container {
     padding-left: 40px;
@@ -723,6 +727,12 @@ footer ol li span {
 @media screen and (max-width: 600px) {
   .container {
     padding: 0 10px;
+  }
+  #header .users a {
+    display: none;
+  }
+  #header .users img {
+    display: inline-block;
   }
   #nav .nav ul {
     width: 100%;
