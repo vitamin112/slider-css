@@ -38,8 +38,7 @@ controler.forEach((item, index) => {
 setInterval(() => {
     counter++;
     handleBanner();
-}, 4000);
-
+}, 4000); 
 
 var closeBtn = document.querySelector(".close-btn");
 var menuChild = document.querySelectorAll(".nav ul li");
